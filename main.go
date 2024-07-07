@@ -7,15 +7,6 @@ import (
 	"strconv"
 )
 
-package main
-
-import (
-"fmt"
-"net/http"
-"os" // Import the os package
-"strconv"
-)
-
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Hello from your Go server!")
